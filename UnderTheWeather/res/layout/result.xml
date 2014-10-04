@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bluesky"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/result_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="start"
+        android:scaleType="centerInside"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/result_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/result_location"
+        android:gravity="start"
+        android:scaleType="centerInside"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/result_date"
+        android:gravity="start"
+        android:scaleType="centerInside"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/result_temperature_bg"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignLeft="@id/result_location"
+        android:layout_alignStart="@id/result_location"
+        android:layout_below="@id/result_text"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/result_temperature"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignLeft="@id/result_temperature_bg"
+        android:layout_alignStart="@id/result_temperature_bg"
+        android:layout_alignTop="@id/result_temperature_bg"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:textColor="@color/black"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/result_otherinfo"
+        android:layout_width="125dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/result_text"
+        android:layout_marginTop="30dip"
+        android:gravity="start"
+        android:scaleType="centerInside"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/result_temperature_bg"
+        android:layout_marginTop="30dip"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/result_nexttext1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/result_nexttemperature1"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/result_nexttext1"
+                android:layout_marginTop="10dip"
+                android:gravity="start"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/result_nextotherinfo1"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/result_nexttext1"
+                android:layout_marginTop="10dip"
+                android:gravity="start"
+                android:scaleType="centerInside"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/result_nexttext2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/result_nexttemperature1"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/result_nexttemperature2"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/result_nexttext2"
+                android:layout_marginTop="10dip"
+                android:gravity="start"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/result_nextotherinfo2"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/result_nexttext2"
+                android:layout_marginTop="10dip"
+                android:gravity="start"
+                android:scaleType="centerInside"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/result_nexttext3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/result_nexttemperature2"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/result_nexttemperature3"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/result_nexttext3"
+                android:layout_marginTop="10dip"
+                android:gravity="start"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/result_nextotherinfo3"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/result_nexttext3"
+                android:layout_marginTop="10dip"
+                android:gravity="start"
+                android:scaleType="centerInside"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/result_nexttext4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/result_nexttemperature3"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/result_nexttemperature4"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/result_nexttext4"
+                android:layout_marginTop="10dip"
+                android:gravity="start"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/result_nextotherinfo4"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/result_nexttext4"
+                android:layout_marginTop="10dip"
+                android:gravity="start"
+                android:scaleType="centerInside"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/yahooicon" />
+
+</RelativeLayout>
